@@ -1,8 +1,109 @@
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keepaste - The Keep & Paste Application</title>
+    <!-- Add Bootstrap CSS via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
-tamirkrispis \
+<header class="bg-dark text-white text-center py-4">
+    <img src="images/keepaste_64x64.png" alt="Keepaste"/>
+    <h1>Keepaste</h1>
+    <h4>The Keep & Paste Application</h4>
+</header>
+
+<main class="container py-4">
+    <section id="description" class="py-4">
+        <div class="container">
+            <h3>Boost your productivity!</h3>
+            <p>
+                Keepaste is a cross-platform application that simplifies the process of storing and pasting frequently used commands and text phrases.
+                <br>No more time-consuming searches for that command syntax you used recently or that DB query you keep on forgetting or repeatedly retyping the same commands over and over again on your day-to-day work.
+                <br>With Keepaste, you can save time and effort by quickly accessing your stored text and pasting it on any other window with a single click. It's designed to be intuitive and efficient.
+                <br>Main use case - keeping command lines and their arguments and executing those on a terminal, IDE on any other window upon need.
+            </p>
+        </div>
+    </section>
+
+    <section id="features" class="py-4">
+        <div class="container">
+            <h3>Key Features</h3>
+            <ul>
+                <li><b>Easy text phrases / commands storage</b>
+                    <br>Store an unlimited number of text phrases (we call them 'Keeps') in Keepaste's user-friendly interface. Organize your phrases into categories for easy management and retrieval.</li>
+                <li><b>Automated Paste on Target Windows</b>
+                <br>Will automatically switch to a desired window, paste your Keep (text phrase) and press the 'Enter' key with a click of a button. Whether you're coding, analysing data, writing emails, or chatting with friends, Keepaste ensures you never have to retype the same content repeatedly.</li>
+                <li><b>Dynamic Parameters</b>
+                <br>Instead of multiple Keeps (phrases/commands) for different situations, you can have a single generic Keep which holds one or more dynamically set parameters. An extremely powerful feature!</li>
+                <li><b>Import / Export</b>
+                <br>Expand, Share and Backup your Keeps by using an easy export/import features.</li>
+<!--                <li><b>Customizable Shortcuts</b></li>-->
+<!--                <li><b>Sync and Backup</b></li>-->
+            </ul>
+        </div>
+    </section>
+
+    <section id="download" class="py-4">
+        <div class="container">
+            <h3>Download Keepaste</h3>
+            <h5>v1.0 (beta)</h5>
+            <b>Compiled and ready to use</b>
+            <ul>
+                <li>Mac - <a href="https://example.com/download/mac">Keepaste_1.0.dmg</a></li>
+                <li>Windows - <a href="https://example.com/download/windows">Keepaste_1.0.zip</a></li>
+                <li>Linux - soon to come...</li>
+            </ul>
+            <b>Source code</b>
+            <br>Available on <a href="https://github.com/tamirkrispis/keepaste">GitHub</a>.
+        </div>
+    </section>
+
+    <section id="screenshots" class="py-4">
+        <div class="container">
+            <h3>Screenshots</h3>
+<!--            <img src="images/screenshot.png" alt="screenshot" width="300">-->
+        </div>
+    </section>
+
+    <section id="library" class="py-4">
+        <div class="container">
+            <h3>Keeps Library</h3>
+            <p>
+                Visit our ever-growing <a href="https://github.com/tamirkrispis/keeps-library" target="_blank">Keeps Library</a> and download ready to use Keeps in various technologies such as aws, terraform, maven, docker, kubernetes, git and more.
+                <br>Once downloaded, just right click anywhere on the Keeps tree on Keepaste, import the file and you should be good to go! You can also modify it as needed.
+                <br>Have a great Keep or Keeps collection to share? Contribute by uploading the exported file to the Library.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-4">
+        <div class="container">
+            <h3>Contribution, Support and Feedback</h3>
+            <p>We welcome contributions from the community to enhance Keepaste.
+                <br>If you have any ideas, bug reports, or feature requests, please visit the <a href="https://github.com/tamirkrispis/keepaste/issues" target="_blank">GitHub repository</a>.
+                <br>to create a new issue with detailed information about the problem. We appreciate your feedback and support!
+                <br>For anything else, feel free to drop me an email at <a href="mailto:tamirkrispis@gmail.com">tamirkrispis@gmail.com</a>.
+                <br>
+                <br>If you like Keepaste, and even more valuable in case you don't, it would be very helpful to let us know about it and how we can make things better in the future.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-2">
+    <div class="container">
+        <p>&copy; 2023 Keepaste. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Add Bootstrap JS via CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
