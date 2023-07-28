@@ -1,7 +1,0 @@
-title: Keepaste
-description: The Keep & Paste application.
-show_downloads: true
-google_analytics:
-remote_theme: pages-themes/architect@v0.2.0
-plugins:
-  - jekyll-remote-theme # add this line to the plugins list if you already have one

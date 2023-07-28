@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keepaste - The Keep & Paste Application</title>
+    <!-- Add Bootstrap CSS via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-323Z9B9QE1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-323Z9B9QE1');
+</script>
+
+<body>
+<header class="bg-dark text-white text-center py-4">
+    <a href="index.htm" target="_self"><img src="images/keepaste_64x64.png" alt="Keepaste"/></a>
+    <h1>Keepaste</h1>
+    <h4>The Keep & Paste Application</h4>
+</header>
+
+<!-- Download instructions -->
+<main class="container py-4">
+    <section id="description" class="py-4">
+        <div class="container">
+    <h3>Download Keepaste</h3>
+    <p>Your download should start automatically. If it doesn't, please click the link below:</p>
+    <p><a href="downloads/Keepaste-1.0.jar" id="downloadLink">Click here to download Keepaste</a></p>
+        </div>
+    </section>
+</main>
+
+<script>
+    // JavaScript to automatically start the download
+    document.addEventListener('DOMContentLoaded', function () {
+        const downloadLink = document.getElementById('downloadLink');
+        downloadLink.click(); // Trigger the download
+    });
+</script>
+
+<!-- Add Bootstrap JS via CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
