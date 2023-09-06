@@ -48,6 +48,13 @@ body {
     color: #fff;
 }
 
+
+.to-center {
+    text-align: center; /* Center the content horizontally */
+    padding: 30px 0; /* Add some padding for spacing */
+}
+
+
 .video-section {
     text-align: center; /* Center the content horizontally */
     padding: 30px 0; /* Add some padding for spacing */
