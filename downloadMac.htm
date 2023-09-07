@@ -94,6 +94,24 @@
             <h3>Download Keepaste for Mac</h3>
             <p>Your download should start automatically. If it doesn't, please click the link below:</p>
             <p><a href="downloads/Keepaste-1.0.dmg" id="downloadLink">Click here to download Keepaste</a></p>
+            <br/>
+            <h4>Important instructions</h4>
+            <p>After downloading and executing the .dmg file, having keepaste working on you Mac requires the following 2 steps -</p>
+            <p>1. Drag the keepaste.app icon onto the Applications icon.</p>
+            <img alt="macOS_step1" src="images/macOS_step1.png">
+            <p>2. Open a terminal and run the following command: <b><i>xattr -cr /Applciations/keepaste.app</i></b></p>
+        </div>
+    </section>
+    <section id="why" class="py-4">
+        <div class="container">
+            <h5>Why?</h5>
+            <p>The reason is that macOS doesn't allow applications to run when it cannot validate their publisher.</p>
+            <p>In order to set a proper publisher for an app, the publisher should be part of "Apple's Developer Program" which involves annual fees.
+                Keepaste is a completely-free and open-source application which doesn't produce income to cover those fees.</p>
+            <p>So, what the command does is telling macOS not to quarantine the keepaste.app file and allow it to run locally although it cannot validate the publisher.</p>
+            <p>A bit long, but that's it.</p>
+            <p>In order to have more confidence, one can perform a checksum validation over the .dmg file to see that it was not modified in any way.</p>
+            <p>Happy keeping & pasting!</p>
         </div>
     </section>
 </main>
