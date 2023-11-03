@@ -928,7 +928,7 @@
         <a href="index.htm#features">Features</a>
         <a href="index.htm#download">Download</a>
         <a href="index.htm#library">Keeps library</a>
-        <a href="index.htm#contact">Contact</a>
+        <a href="index.htm#support">Contribution, Support & Feedback</a>
         <a href="tutorial.htm">Quick Tutorial</a>
         <a href="completeTutorial.htm">Complete Tutorial</a>
     </div>
@@ -1081,6 +1081,21 @@
             <br><br>Changing the flow can be done from the top menu under Settings > Flow.</p>
             <h5>Themes</h5>
             <p>An app that respects its users must have this option, change between Light and Dark themes under Settings > Themes.</p>
+            <h5>$PATH (only on Mac)</h5>
+            <p>When working with Keep command-parameters on Mac, as those are being executed behind the scenes for you by Keepaste,
+             then it should have the proper PATH variable set to hold the paths to relevant command line tools which are used as part of command-parameters.</p>
+            <p>You will identify when the $PATH is not set correctly or missing a path if when running a Keep that holds a command-parameter,
+            you see a result which is unexpected such as "command not found" or similar when a dialog to select a desired value for that command-parameter.</p>
+            <p>For example: if you're using <b>Kubectl</b> or <b>aws</b> command line tools as part of your Keep parameters, then the PATH should hold
+            the paths to where these command line tools reside on your machine, which are normally "/usr/local/bin/kubectl" and "/opt/homebrew/bin/aws".</p>
+            <p>The quickest way to set your path is to open your favorite terminal you usually use, and which has everything already working
+             and run the following command - "<i><b>echo $PATH</b></i>", then just copy the output and paste into the $PATH settings on Keepaste.
+            <h5>Toggle Locking (only on Windows)</h5>
+            <p>This should be enables when you wish Keepaste to only execute your Keeps on the current active-window.
+                It will stop intercepting any other active windows as long as Locking is toggled on.</p>
+            <p>Example: Let's say you only use Keepaste for executing Keeps on your beloved terminal window, in this case,
+            you can select Toggle Locking once your terminal window is the target-window on Keepaste. From now on, any of your
+            Keeps will only execute on that terminal window.</p>
         </div>
     </section>
 </main>
