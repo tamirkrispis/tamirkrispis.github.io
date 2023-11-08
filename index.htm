@@ -100,6 +100,7 @@
         <a href="index.htm#support">Contribution, Support & Feedback</a>
         <a href="tutorial.htm">Quick Tutorial</a>
         <a href="completeTutorial.htm">Complete Tutorial</a>
+        <a href="index.htm#issues">Known issues & Workarounds</a>
     </div>
 </nav>
 
@@ -174,6 +175,36 @@
             <p>If you like Keepaste, and even more valuable in case you don't, it would be very helpful to let me know about it and how things can be better in the future.</p>
             <p>Fuel this open-source project with a <a href="https://www.buymeacoffee.com/keepaste" target="_blank">cup of coffee!</a> ☕ to show your support and keep Keepaste moving forward.</p>
             <p>For anything else, feel free to drop me an email at <a href="mailto:tamirkrispis@gmail.com">tamirkrispis@gmail.com</a>.</p>
+        </div>
+    </section>
+
+    <section id="issues" class="py-4">
+        <div class="container">
+            <h3>Known Issues & Workarounds</h3>
+            <h5>Using Mac</h5>
+            <p>
+                <b>On Mac, when I double-click a Keep to execute it, it doesn't switch to the active window.</b>
+                <br/>Change the settings using the top menu so Keepaste won't be always on top and give it another go.
+            </p>
+            <p>
+                <b>On Mac, I get a message that Keepaste cannot run as the publisher cannot be identified.</b>
+                <br/>Open a terminal and run the following command: <b><i>xattr -cr /Applciations/keepaste.app</i></b>
+                <br/>The reason is that macOS doesn't allow applications to run when it cannot validate their publisher.
+                <br/>In order to set a proper publisher for an app, the publisher should be part of "Apple's Developer Program" which involves annual fees. Keepaste is a completely-free and open-source application which doesn't produce income to cover those fees.
+                <br/>So, what the command does is telling macOS not to quarantine the keepaste.app file and allow it to run locally, although it cannot validate the publisher.
+            </p>
+            <h5>Using Windows</h5>
+            <p>
+                <b>On Windows, Keepaste won't identify some of my windows.</b>
+                <br/>These windows may run in higher privileges ("Run as administrator"), all you need to do is also run Keepaste as an administrator (Right-click on the Keepaste executable and choose "Run as administrator") and it will be able to get those as well.
+            </p>
+            <p>
+                <b>On Windows, when executing Keepaste, I get a security alert saying Keepaste is an unrecognized app.</b>
+                <br/>The reason is that Windows protect your PC from running applications it cannot validate their publisher.
+                <br/>In order to set a proper publisher for an app that can be validated, the application file should be digitally signed with a certificate purchased from a Certificate Authority (CA) which involves annual fees.
+                <br/>Keepaste is a completely-free and open-source application which doesn't produce income to cover those fees.
+                <br/>Nevertheless, Windows will always give you the option to continue and use this file. Click on 'More info' and select 'Run anyway'.
+            </p>
         </div>
     </section>
 </main>
