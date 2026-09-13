@@ -605,6 +605,86 @@ th {
   border: 2px solid var(--sea);
 }
 
+.call-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 0.25rem;
+}
+
+.call-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.65rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--sea);
+  color: #fff !important;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.call-btn:hover {
+  background: var(--sea-light);
+  color: #fff !important;
+}
+
+.call-btn.call-112 {
+  background: var(--bad);
+}
+
+.call-btn.call-112:hover {
+  background: #7f1515;
+}
+
+.call-btn.call-wa {
+  background: #128c7e;
+}
+
+.call-btn.call-wa:hover {
+  background: #0e7368;
+}
+
+.call-btn.call-secondary {
+  background: #fff;
+  color: var(--sea) !important;
+  border: 2px solid var(--sea);
+}
+
+.call-btn.call-secondary:hover {
+  background: var(--sand);
+  color: var(--coral) !important;
+  border-color: var(--coral);
+}
+
+.transfer-card {
+  border: 1px solid var(--sand-deep);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  background: #fff;
+  margin: 0.85rem 0;
+}
+
+.transfer-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.12rem;
+}
+
+.transfer-card .pickup {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--sea);
+  margin: 0.2rem 0 0.55rem;
+}
+
+.phone-table td:nth-child(2) {
+  white-space: nowrap;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -765,6 +845,14 @@ th {
   .day-nav,
   .btn {
     display: none !important;
+  }
+
+  .call-btn {
+    display: inline-flex !important;
+  }
+
+  .transfer-card {
+    break-inside: avoid;
   }
 
   .section,
